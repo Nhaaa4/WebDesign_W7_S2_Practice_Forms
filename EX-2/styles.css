@@ -32,7 +32,7 @@ body {
 .container h1 {
     width: 100%;
     background-color: #A6CF98;
-    color: #DB6B97;
+    color: #557C55;
     font-weight: bold;
     text-align: center;
     padding: 1rem;
@@ -53,6 +53,8 @@ form {
 .form-group {
     display: flex;
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .input {
@@ -67,16 +69,59 @@ form {
 .last-name-group,
 .password-group,
 .confirm-password-group,
-.gender-group,
-.hobby-group,
-.source-of-income-group,
-.income-group {
+.gender-group {
     flex-grow: 1;
 }
 
-.group-input {
-    display: flex;
-    gap: 1rem;
+.source-of-income-group {
+    flex-grow: 5;
+}
+
+.income-group {
+    flex-grow: 3;
+}
+
+.source-of-income-group select {
+    width: 100%;
+    background-color: #fff;
+    color: #557C55;
+}
+
+.income-group input[type="range"] {
+    width: 70%;
+}
+
+.income-group input[type="submit"] {
+    width: 20%;
+    background-color: #DB6B97;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #F2FFE9;
+}
+
+.income-group .form-group {
+    justify-content: space-between;
+}
+
+.upload-group input[type="file"] {
+    border: none;
+    width: 100%;
+}
+
+.age-group {
+    flex-grow: 1;
+    width: 57%;
+}
+
+.upload-group {
+    flex-grow: 1;
+}
+
+textarea {
+    width: 100%;
+    overflow-y: scroll;
+    padding: 1rem;
 }
 
 .footer {

@@ -61,7 +61,7 @@
             <div class="form-group">
                 <div class="source-of-income-group">
                     <label for="source-of-income">Source of Income</label><br>
-                    <select name="" id="">
+                    <select class="input">
                         <option value="">(Select one)</option>
                         <option value="employed">Employed</option>
                         <option value="unemployed">Unemployed</option>
@@ -71,19 +71,21 @@
                 </div>
                 <div class="income-group">
                     <label for="income">Income</label><br>
-                    <input type="range">
-                    <input type="submit" value="20k">
+                    <div class="form-group">
+                        <input type="range" class="input">
+                        <input type="submit" value="20k" class="input">
+                    </div>
                 </div>
             </div>
 
             <div class="form-group">
-                <div>
+                <div class="upload-group">
                     <label for="upload">Upload Profile Picture</label><br>
-                    <input type="file">
+                    <input type="file" class="input">
                 </div>
-                <div>
+                <div class="age-group">
                     <label for="age">Age</label><br>
-                    <input type="number">
+                    <input type="number" min="13" max="113" class="input">
                 </div>
             </div>
             <div>
